@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -15,11 +15,17 @@ export default function Home() {
       defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="pill"
+      contentWidth="wide"
+      sizing="comfortable"
+      background="plain"
+      cardStyle="elevated"
+      primaryButtonStyle="solid"
+      secondaryButtonStyle="outline"
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
-            {"name": "Shop", "id": "shop"},
+            {"name": "Shop", "id": "products"},
             {"name": "Training Lab", "id": "about"}, 
             {"name": "Menu", "id": "products"},
             {"name": "About", "id": "about"}
@@ -129,8 +135,6 @@ export default function Home() {
       
       <div id="footer" data-section="footer">
         <FooterBase
-          logoText="Matbakh"
-          copyrightText="© 2025 | Matbakh Coffee Lab Madrid"
           columns={[
             {
               "title": "Shop",
@@ -157,6 +161,8 @@ export default function Home() {
               ]
             }
           ]}
+          logoText="Matbakh"
+          copyrightText="© 2025 | Matbakh Coffee Lab Madrid"
         />
       </div>
     </ThemeProvider>

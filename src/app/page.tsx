@@ -7,7 +7,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Coffee, GraduationCap, Mail, Settings } from "lucide-react";
+import { Award, Coffee, GraduationCap, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -15,12 +15,6 @@ export default function Home() {
       defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="pill"
-      contentWidth="wide"
-      sizing="comfortable"
-      background="plain"
-      cardStyle="elevated"
-      primaryButtonStyle="solid"
-      secondaryButtonStyle="outline"
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
@@ -105,11 +99,6 @@ export default function Home() {
               "title": "Specialty Coffee",
               "description": "Work with premium beans from renowned origins including Colombian Typica and Ethiopian varieties",
               "icon": Coffee
-            },
-            {
-              "title": "Hands-on Experience",
-              "description": "Practice with professional-grade equipment in our state-of-the-art coffee lab environment",
-              "icon": Settings
             }
           ]}
           imageSrc="/placeholders/placeholder1.webp"
